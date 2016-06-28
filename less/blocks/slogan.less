@@ -1,68 +1,107 @@
 .slogan {
+  .wrapper ();
+  .wrapper-fluid ();
+
   background-image: url(../img/hero-mobile@1x.jpg);
   background-size: auto 373px;
   background-position: center top;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
 
-  &__header {
-    line-height: 300px;
+.slogan__header {
+  line-height: 300px;
+}
+
+.slogan__intro {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 30px;
+  color: #231f20;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.slogan__btn {
+  padding: 20px 30px;
+  display: block;
+  font-size: 18px;
+  line-height: 65px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.slogan__btn::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  width: 60px;
+  height: 65px;
+}
+
+.slogan__btn--interior {
+  background-color: #63d1bb;
+}
+
+.slogan__btn--interior::after {
+  background-image: url(../img/icon-interior.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slogan__btn--toy {
+  background-color: #56c3b2;
+}
+
+.slogan__btn--toy::after {
+  background-image: url(../img/icon-toy.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slogan__btn-title {
+  line-height: 24px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+@media @tablet-widths {
+
+  .slogan {
+    margin-bottom: 30px;
   }
 
-  &__intro {
-    margin: 0 auto;
-    font-size: 24px;
-    line-height: 30px;
-    color: #231f20;
-    vertical-align: middle;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+  .slogan__intro {
+    font-size: 40px;
+    line-height: 50px;
   }
 
-  &__btn {
-    padding: 20px 30px;
-    display: block;
-    font-size: 18px;
-    line-height: 65px;
-    text-decoration: none;
-    font-weight: 700;
-    color: #ffffff;
-
-    &::after {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      float: right;
-      width: 60px;
-      height: 65px;
-    }
-
-    &--interior {
-      background-color: #63d1bb;
-
-      &::after {
-        background-image: url(../img/icon-interior.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-
-    &--toy {
-      background-color: #56c3b2;
-
-      &::after {
-        background-image: url(../img/icon-toy.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
+  .slogan__header {
+    line-height: 625px;
   }
 
-  &__btn-title {
-    line-height: 24px;
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
+  .slogan__btns {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .slogan__btn {
+    flex-basis: 50%;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .slogan__intro {
+    font-size: 50px;
+    line-height: 57px;
   }
 
 }
