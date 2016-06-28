@@ -1,0 +1,102 @@
+.form__body {
+  .wrapper ();
+  .wrapper-fluid ();
+  padding: 0 30px;
+  margin: 30px 0 50px;
+}
+
+.form__body p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__body-fieldset {
+  border: 0;
+  border-top: 1px solid #62d1ba;
+  margin-bottom: 20px;
+  padding: 7px 0;
+}
+
+.form__body-fieldset-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+
+.form__body-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  min-height: 40px;
+  position: relative;
+}
+
+.form__body-field span {
+  display: inline-block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: 2px solid #444444;
+  flex: 0 0 36px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-image: url(../img/icon-tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: 2px solid #444444;
+  border-radius: 36px;
+  flex: 0 0 36px;
+}
+
+input[type="radio"]:checked + label:before {
+  content: '\2022';
+  font-size: 55px;
+  text-align: center;
+  line-height: 30px;
+  color: #62d1ba;
+}
+
+@media @tablet-widths {
+
+  .form__body-fieldset {
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 0;
+  }
+
+  .form__body-fieldset-title {
+    display: block;
+    width: 100%;
+    flex: 0 0 165px;
+    padding-right: 0;
+  }
+
+}

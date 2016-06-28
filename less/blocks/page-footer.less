@@ -1,0 +1,115 @@
+.page-footer {
+  background-color: @bg-lightgrey;
+}
+
+.page-footer__wrapper {
+  .wrapper ();
+  .wrapper-fluid ();
+  padding: 20px 30px;
+}
+
+.page-footer__socials {
+  margin: 0;
+}
+
+.page-footer__copyright {
+    margin: 0;
+}
+
+.social-links {
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.social-link--inst {
+  background-image: url(../img/icon-insta.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link--fb {
+  background-image: url(../img/icon-fb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link--tw {
+  background-image: url(../img/icon-twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-footer__copyright {
+  text-align: center;
+}
+
+.page-footer__copyright-link {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-footer__copyright-link span {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -9999px;
+  width: 35px;
+  height: 40px;
+  margin-left: 20px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media @tablet-widths {
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .page-footer__logo {
+    flex: 1 100%;
+    display: block;
+    min-width: 105px;
+    height: 50px;
+    background-image: url(../img/logo-mobile.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  .page-footer__socials {
+    flex: 1 100%;
+  }
+
+  .social-links {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    flex: 1 100%;
+    text-align: right;
+  }
+
+}

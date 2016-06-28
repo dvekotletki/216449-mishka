@@ -7,103 +7,132 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden"></h1>
-      <div class="page-header__logo">
-        <img src="img/logo-mobile.svg" alt="">
-      </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--basket"><a href="#">Корзина: пока пуста</a></li>
+      <div class="page-header__wrapper">
+        <h1 class="visually-hidden"></h1>
+        <a class="page-header__logo" href="#">
+          <img src="img/logo-mobile.svg" alt="">
+        </a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__wrapper">
+            <li class="main-nav__wrapper-item main-nav__wrapper-item--menu">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Каталог товаров</span></a></li>
+                <li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Вязание на заказ</span></a></li>
+              </ul>
+            </li>
+            <li class="main-nav__wrapper-item main-nav__wrapper-item--menu main-nav__wrapper-item--only-desktop">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Новый поступления</span></a></li>
+                <li class="main-nav__item main-nav__item"><a href="#"><span class="main-nav__item-title">Распродажа</span></a></li>
+              </ul>
+            </li>
+            <li class="main-nav__wrapper-item main-nav__wrapper-item--service">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--search"><a href="#"><span class="main-nav__item-title">Поиск по сайту</span></a></li>
+                <li class="main-nav__item main-nav__item--basket"><a href="#"><span class="main-nav__item-title">Корзина: пока пуста</span></a></li>
+              </ul>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <section class="form">
-      <header class="form__header">
-        <h2 class="form__title">Вязание на заказ</h2>
-      </header>
+      <section class="page-title">
+        <h2>Вязание на заказ</h2>
+      </section>
       <section class="form__body">
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form action="#" method="post">
-          <fieldset>
-            <legend>Тип</legend>
-            <label for="interior">
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">Тип</legend>
+            <div class="form__body-fieldset-inner">
               <input type="radio" name="type" id="interior" value="interior">
-              Аксессуар для интерьера
-            </label>
-            <label for="toy">
+              <label class="form__body-field form__body-field--radio" for="interior">
+                <span>Аксессуар для интерьера</span>
+              </label>
               <input type="radio" name="type" id="toy" value="toy">
-              Детская игрушка
-            </label>
+              <label class="form__body-field form__body-field--radio" for="toy">
+                <span>Детская игрушка</span>
+              </label>
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <label for="white">
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">Цвет</legend>
+            <div class="form__body-fieldset-inner">
               <input type="checkbox" name="color" id="white" value="white">
-              Белый
-            </label>
-            <label for="gray">
+              <label class="form__body-field form__body-field--checkbox" for="white">
+                <span>Белый</span>
+              </label>
               <input type="checkbox" name="color" id="gray" value="gray">
-              Серый
-            </label>
-            <label for="tiffany">
+              <label class="form__body-field form__body-field--checkbox" for="gray">
+                <span>Серый</span>
+              </label>
               <input type="checkbox" name="color" id="tiffany" value="tiffany">
-              «Тиффани»
-            </label>
-            <label for="black">
+              <label class="form__body-field form__body-field--checkbox" for="tiffany">
+                <span>«Тиффани»</span>
+              </label>
               <input type="checkbox" name="color" id="black" value="black">
-              Черный
-            </label>
-            <label for="pink">
+              <label class="form__body-field form__body-field--checkbox" for="black">
+                <span>Черный</span>
+              </label>
               <input type="checkbox" name="color" id="pink" value="pink">
-              Розовый
-            </label>
-            <label for="orange">
+              <label class="form__body-field form__body-field--checkbox" for="pink">
+                <span>Розовый</span>
+              </label>
               <input type="checkbox" name="color" id="orange" value="orange">
-              Оранжевый
-            </label>
+              <label class="form__body-field form__body-field--checkbox" for="orange">
+                <span>Оранжевый</span>
+              </label>
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>ФИО</legend>
-            <label for="lastname">Фамилия</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию">
-            <label for="firstname">Имя</label>
-            <input type="text" name="firstname" id="firstname" placeholder="Введите ваше имя">
-            <label for="middlename">Отчество</label>
-            <input type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">ФИО</legend>
+            <div class="form__body-fieldset-inner">
+              <label for="lastname">Фамилия</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию">
+              <label for="firstname">Имя</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Введите ваше имя">
+              <label for="middlename">Отчество</label>
+              <input type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Тел</legend>
-            <input type="tel" name="phone" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ">
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">Тел</legend>
+            <div class="form__body-fieldset-inner">
+              <input type="tel" name="phone" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>E-mail</legend>
-            <input type="email" name="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">E-mail</legend>
+            <div class="form__body-fieldset-inner">
+              <input type="email" name="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Доп</legend>
-            <textarea name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="form__body-fieldset">
+            <legend class="form__body-fieldset-title">Доп</legend>
+            <div class="form__body-fieldset-inner">
+              <textarea name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
           <input class="btn" type="submit" value="Отправить заказ">
         </form>
       </section>
     </section>
-    <footer class="footer-page">
-      <p class="page-footer__socials">
-        <span class="social-links">
-          <a class="social-link  social-link--inst" href="#"></a>
-          <a class="social-link  social-link--fb" href="#"></a>
-          <a class="social-link  social-link--tw" href="#"></a>
-        </span>
-      </p>
-      <p class="page-footer__copyright">
-        <a class="btn  page-footer__copyright-link" href="#">Разработано <span>htmlacademy</span></a>
-      </p>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#"></a>
+        <p class="page-footer__socials">
+          <span class="social-links">
+            <a class="social-link  social-link--inst" href="#"></a>
+            <a class="social-link  social-link--fb" href="#"></a>
+            <a class="social-link  social-link--tw" href="#"></a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="#">Разработано <span>htmlacademy</span></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
