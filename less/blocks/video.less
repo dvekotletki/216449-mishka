@@ -54,6 +54,7 @@
   }
 
   .video__content {
+    width: 100%;
     order: -1;
   }
 
@@ -69,19 +70,37 @@
 
   .video__item {
     flex-direction: column;
-    height: 420px;
+    max-height: 455px;
   }
 
   .video__content {
-    flex: 1 0 70%;
+    flex: 1 100%;
+    width: 65%;
   }
 
   .video__header {
-    flex: 0 0 30%;
+    flex: 1 50%;
+    background-position: left 70px top 45px;
+    padding: 100px 70px 0;
+    width: 35%;
+  }
+
+  .video__title {
+    font-size: 18px;
+    margin: 0 0 45px;
   }
 
   .video__desc {
-    flex: 0 0 30%;
+    flex: 1 50%;
+    box-sizing: border-box;
+    width: 35%;
+    padding: 0 70px 60px;
+  }
+
+  .video__desc p {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 0 50px;
   }
 
 }
