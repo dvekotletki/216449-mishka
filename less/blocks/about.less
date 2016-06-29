@@ -25,49 +25,18 @@
   color: #000000;
   display: block;
   margin: 10px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about__item::before {
-  content: '';
-  display: block;
-  height: 50px;
-  margin-bottom: 10px;
+.about__item svg {
+  margin-bottom: 20px;
 }
 
-.about__item--flower::before {
-  background-image: url(../img/icon-feature-1.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.about__item--money::before {
-  background-image: url(../img/icon-feature-2.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.about__item--heart::before {
-  background-image: url(../img/icon-feature-3.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.about__item--ball::before {
-  background-image: url(../img/icon-feature-4.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.about__item--rocket::before {
-  background-image: url(../img/icon-feature-5.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.about__item--gift::before {
-  background-image: url(../img/icon-feature-6.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
+.about__item path {
+  fill: #63d1bb;
 }
 
 @media @tablet-widths {
@@ -84,6 +53,30 @@
 
   .about__item {
     width: 40%;
+  }
+
+  .about__item--flower {
+    order: 1;
+  }
+
+  .about__item--ball {
+    order: 2;
+  }
+
+  .about__item--money {
+    order: 3;
+  }
+
+  .about__item--rocket {
+    order: 4;
+  }
+
+  .about__item--heart {
+    order: 5;
+  }
+
+  .about__item--gift {
+    order: 6;
   }
 
 }
