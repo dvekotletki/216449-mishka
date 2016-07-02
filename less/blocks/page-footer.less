@@ -26,6 +26,7 @@
 
 .social-link {
   display: inline-block;
+  vertical-align: middle;
   width: 40px;
   height: 30px;
   margin: 0 5px;
@@ -62,6 +63,7 @@
 }
 
 .page-footer__copyright-link {
+  font-family: Verdana;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -121,6 +123,15 @@
   .page-footer__copyright {
     flex: 1 100%;
     text-align: right;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .page-footer__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
 }

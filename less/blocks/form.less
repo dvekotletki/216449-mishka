@@ -9,8 +9,8 @@
 }
 
 .form__body p {
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 14.36px;
+  line-height: 25.31px;
   margin-bottom: 30px;
 }
 
@@ -38,6 +38,7 @@
 .form__body-fieldset-title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
   padding-right: 30px;
@@ -59,6 +60,7 @@
 
 .form__body-field span {
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .form__body-fieldset-inner {
@@ -72,6 +74,7 @@
 
 .form__body-fieldset-inner label {
   display: flex;
+  font-family: Verdana;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
@@ -91,6 +94,15 @@
 
   .form__body {
     padding: 0;
+  }
+
+  .form__body p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .form__body-fieldset-inner label {
+    font-size: 18px;
   }
 
   .form__body-fieldset {
@@ -127,9 +139,17 @@
     margin-bottom: 0;
   }
 
-  .form__body-fieldset-inner--checkbox {
+  .form__body-fieldset-inner {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form__body-fieldset-inner--checkbox {
+    flex-wrap: wrap;
+  }
+
+  .form__body-fieldset-inner--radio label {
+    flex: 1 100%;
   }
 
   .form__body-fieldset-inner--checkbox label {
@@ -142,6 +162,7 @@
   }
 
   .form__body-fieldset-inner-name {
+    flex: 1 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -152,6 +173,8 @@
   }
 
   .form__body-fieldset-required {
+    font-size: 16px;
+    line-height: 18px;
     display: block;
   }
 
